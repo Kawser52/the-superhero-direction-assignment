@@ -1,0 +1,13 @@
+.teacher{
+   
+}
+.teacher-sub{
+    display: grid;
+   
+}
+.teacher-details{
+    background-color: rgb(221, 204, 221);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 15px;
+}

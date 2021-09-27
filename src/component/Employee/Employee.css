@@ -1,0 +1,16 @@
+.header{
+    background: rgb(236, 201, 236);
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.teacher-section{
+    display: flex;
+}
+.teachers{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     padding: 0px 110px;
+}
