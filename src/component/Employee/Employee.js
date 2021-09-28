@@ -1,33 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import Teacher from '../Teacher/Teacher';
+import Teachernumber from '../TeacherNumber/Teachernumber';
 import './Employee.css'
 
 const Employee = () => {
 const [teachers, setTeacher] = useState([]);
+const [teacherNumber, setteacherNumber] =useState([]);
 useEffect(()=>{
     fetch('./teacher.json')
     .then(res => res.json())
     .then(data => setTeacher(data))
 },[])
+const salaryAd = (teacher) =>{
+ const newCart = [...teacherNumber, teacher];
+ setteacherNumber(newCart);
+}
 
     return (
         <div className="container">
-            <div className="header">
-                <h1>Teachers are the real heroes</h1>
-                <p>the ones who went the extra mile to motivate us and tell us that we were special.</p>
-                <h1>Total Salary : 5 Milion</h1>
-            </div>
             <div className="teacher-section">
-                    <div className="teachers">
+                <div className="teachers">
                 {
                     teachers.map(teacher => <Teacher 
                         key = {teacher._id}
                         teacher ={teacher}
+                        salarryAd = {salaryAd}
                         ></Teacher>)
                 }
                 </div>
-                <div className="teacher-sallary">
-                    <h2>kita</h2>
+                <div className="teacher-salary">
+                    <Teachernumber teacherNumber = {teacherNumber}></Teachernumber>
                 </div>
             </div>
             

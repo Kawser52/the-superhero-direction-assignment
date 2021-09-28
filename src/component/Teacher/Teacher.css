@@ -11,3 +11,11 @@
     border-radius: 5px;
     padding: 15px;
 }
+.teacher-img{
+    text-align: center;
+}
+.teacher-img img{
+    width: 80px;
+height: 80px;
+border-radius: 50%;
+}
