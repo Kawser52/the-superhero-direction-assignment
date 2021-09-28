@@ -1,0 +1,12 @@
+.slary-section{
+    background-color: #7ff192;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.custom-style{
+    font-size: 17px;
+    color: rgb(241, 44, 44);
+}
