@@ -4,8 +4,8 @@ const Teachernumber = (props) => {
     const {teacherNumber} = props;
     let total = 0;
 
-    for (const product of teacherNumber){
-        total = total + product.salary; 
+    for (const teacher of teacherNumber){
+        total = total + teacher.salary; 
     }
     return (
         <div>

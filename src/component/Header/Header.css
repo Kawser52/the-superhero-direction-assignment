@@ -1,8 +1,8 @@
 .header{
     background: rgb(236, 201, 236);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     width: 70%;
-    margin: 0 auto;
+    margin-left: 60px;
     border-radius: 15px;
 }
